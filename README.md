@@ -10,10 +10,14 @@ This repository contains the source code
 
 3 - All of the infrastructure is built using Terraform.
 
-4 - In addition, I make use of Terragrunt to create this setup for multiple environments in a DRY approach.
+4 - In addition, I make use of Terragrunt to create this setup for multiple environments to Keep Terraform code DRY approach.
 
 
 ## Architecture Diagram
 ![Alt text](./architecture-s3-cloudfront.png?raw=true "Architecture Diagram")
 
 
+## Resources
+[Terragrunt](https://terragrunt.gruntwork.io/)
+
+[Terragrunt-configuration](https://developer.newrelic.com/terraform/terragrunt-configuration) 
