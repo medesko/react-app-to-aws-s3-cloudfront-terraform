@@ -1,4 +1,4 @@
-# How auto deploy react app to aws S3 & CloudFront using terraform
+# How to auto deploy react app to aws S3 & CloudFront using terraform
 
 This repository contains the source code
 
