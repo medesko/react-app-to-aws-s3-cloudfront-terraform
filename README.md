@@ -14,7 +14,7 @@ This repository contains the source code
 
 
 ## Architecture Diagram
-![Alt text](./architecture-s3-cloudfront.png?raw=true "Architecture Diagram")
+![Alt text](./architecture-diagram-frontend-cicd-pipeline-s3-cloudfront.png?raw=true "Architecture Diagram FrontEnd CICD Pipeline S3 CloudFront")
 
 
 ## Resources
