@@ -18,8 +18,8 @@ variable "environment" {
   type        = string
 }
 
-variable "github_org_name" {
-  description = "Github organization name"
+variable "github_org" {
+  description = "Github organization"
   type        = string
   default     = "medesko"
 }
@@ -29,7 +29,7 @@ variable "github_secret_name" {
 }
 
 variable "repository_name" {
-  description = "Git repository name"
+  description = "Git repos name"
   type        = string
   default     = "terraform-react-app-deployments-aws-s3-cloudfront"
 }
