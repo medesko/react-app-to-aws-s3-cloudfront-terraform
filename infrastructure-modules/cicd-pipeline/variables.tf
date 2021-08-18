@@ -35,6 +35,6 @@ variable "repository_name" {
 }
 
 variable "branch_name" {
-  description = "Git branch name"
+  description = "Git stage branch name"
   type        = string
 }
