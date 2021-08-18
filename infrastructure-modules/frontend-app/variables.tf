@@ -13,14 +13,6 @@ variable "application_name" {
   type = string
 }
 
-variable "root_domain_name" {
-   default = "frontend.domain.tld"
-}
-
-variable "application_subdomain" {
-   default = "${var.environment}.frontend.${var.root_domain_name}"
-}
-
 variable "environment" {
   description = "Applicaiton environment"
   type = string
