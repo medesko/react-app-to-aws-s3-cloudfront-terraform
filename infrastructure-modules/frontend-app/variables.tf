@@ -17,3 +17,11 @@ variable "environment" {
   description = "Applicaiton environment"
   type = string
 }
+
+variable "root_domain_name" {
+   default = "domain.tld"
+}
+
+variable "application_subdomain" {
+   default = "${var.environment}.${var.root_domain_name}"
+}
