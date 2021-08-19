@@ -1,4 +1,4 @@
-resource aws_codepipeline main {
+resource "aws_codepipeline" "main" {
   name = "${var.application_name}-frontend-${var.environment}"
   role_arn = aws_iam_role.codepipeline_frontend.arn 
 
