@@ -26,7 +26,7 @@ resource "aws_iam_role_policy_attachment" "codepipeline_frontend" {
   policy_arn = aws_iam_policy.codepipeline_frontend.arn
 }
 
-data aws_iam_policy_document codepipeline_frontend {
+data "aws_iam_policy_document" "codepipeline_frontend" {
   statement {
     effect = "Allow"
 
