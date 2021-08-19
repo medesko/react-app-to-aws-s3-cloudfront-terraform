@@ -3,7 +3,7 @@ variable "application_name" {
   type = string
 }
 
-variable build_timeout {
+variable "build_timeout" {
   type        = string
   default     = "10"
   description = "Build time out duration"
@@ -27,24 +27,24 @@ variable "branch_name" {
   type = string
 }
 
-variable s3_bucket_destination {
+variable "s3_bucket_destination" {
   type        = string
   description = "S3 bucket destination for the frontend"
 }
 
-variable pipeline_bucket_name {
+variable "pipeline_bucket_name" {
   type        = string
   default     = "frontend-app-pipeline-bucket"
   description = "S3 bucket for pipeline artifacts"
 }
 
-variable codebuild_bucket_name {
+variable "codebuild_bucket_name" {
   type        = string
   default     = "frontend-app-codebuild-bucket"
   description = "S3 bucket for build cache"
 }
 
-variable bucket_acl {
+variable "bucket_acl" {
   type        = string
   default     = "private"
   description = "Bucket ACL (Access Control Listing)"
