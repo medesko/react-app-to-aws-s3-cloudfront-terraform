@@ -1,0 +1,18 @@
+inputs = {
+  environment    = "develop"
+  branch_name    = "develop"
+}
+
+include {
+  path = find_in_parent_folders()
+}
+
+terraform {
+  source = "../../../infrastructure-modules/cicd-pipeline"
+  extra_arguments "common_vars" {
+    commands = get_terraform_commands_that_need_vars()
+    optional_var_files = [
+      find_in_parent_folders("sensitive.tfvars")
+    ]
+  }
+}
