@@ -4,8 +4,8 @@ generate "provider" {
   contents = <<EOF
 
   provider "aws" {
-     region  = "eu-west-1"
-     profile = "serverless-deployer"
+     region  = "eu-west-3"
+     profile = "serverless-agent"
   }
 
   terraform {
@@ -28,7 +28,7 @@ remote_state {
     bucket                  = "devopsjs-terraform-state"
     key                     = "${path_relative_to_include()}/terraform.tfstate"
     dynamodb_table          = "devopsjs-terraform-lock-table"
-    profile                 = "serverless-deployer"
-    region                  = "eu-west-1"
+    profile                 = "serverless-agentr"
+    region                  = "eu-west-3"
   }
 }

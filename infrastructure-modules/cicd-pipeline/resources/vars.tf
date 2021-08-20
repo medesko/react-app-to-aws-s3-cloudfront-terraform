@@ -1,6 +1,6 @@
 variable "application_name" {
   description = "The name of the application"
-  type = string
+  type        = string
 }
 
 variable "build_timeout" {
@@ -11,7 +11,7 @@ variable "build_timeout" {
 
 variable "repository_name" {
   description = "Name of git repository"
-  type = string
+  type        = string
 }
 
 variable "github_org" {
@@ -20,7 +20,7 @@ variable "github_org" {
 
 variable "github_token" {
   description = "Name of github token"
-  type = string
+  type        = string
 }
 
 variable "branch_name" {
@@ -52,11 +52,11 @@ variable "bucket_acl" {
 
 variable "environment" {
   description = "Applicaiton environment"
-  type = string
+  type        = string
 }
 
 variable "codebuild_image" {
   description = "CodeBuild Container base image"
-  default = "aws/codebuild/standard:4.0"
-  type = string
+  default     = "aws/codebuild/standard:4.0"
+  type        = string
 }
