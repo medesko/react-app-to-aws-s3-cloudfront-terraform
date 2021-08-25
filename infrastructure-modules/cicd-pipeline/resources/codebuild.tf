@@ -15,7 +15,7 @@ resource "aws_codebuild_project" "frontend_build_project" {
 
   source {
     type      = "CODEPIPELINE"
-    buildspec = "client-application/buildspec.yml"
+    buildspec = "frontend-app/buildspec.yml"
   }
 
   environment {
